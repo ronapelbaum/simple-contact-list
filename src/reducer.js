@@ -1,0 +1,22 @@
+import { Types } from './actions';
+
+const initialState = {
+  counter: 0,
+};
+
+const listsReducer = (state = initialState, action) => {
+  console.log('rapelbaum - reducer', action);
+  
+  switch (action.type) {
+    case Types.INCREMENT_COUNTER:
+      // TODO add immutability (lodash/cloneDeep)
+      return {
+        ...state,
+        counter: state.counter + 1,
+      };
+    default:
+      return state;
+  }
+};
+
+export default listsReducer;
