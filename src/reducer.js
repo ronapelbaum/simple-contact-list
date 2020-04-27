@@ -1,12 +1,12 @@
 import { Types } from './actions';
+import mockData from './mock/contact-list.json';
 
 const initialState = {
   counter: 0,
+  contactList: mockData,
 };
 
 const listsReducer = (state = initialState, action) => {
-  console.log('rapelbaum - reducer', action);
-  
   switch (action.type) {
     case Types.INCREMENT_COUNTER:
       // TODO add immutability (lodash/cloneDeep)
