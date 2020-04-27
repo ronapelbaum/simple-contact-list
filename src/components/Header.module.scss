@@ -1,0 +1,11 @@
+@import '../colors';
+@import '../sizes';
+@import '../common.module.scss';
+
+.header {
+  background-color: $dusk;
+  color: white;
+  font-size: $fs-xl;
+  padding: $gap-xl;
+  
+}
