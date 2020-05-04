@@ -14,7 +14,7 @@ const ContactList = ({
 }) => (
   <Grid
     container
-    justify="flex-start"
+    justify="center"
     alignItems="center"
     spacing={2}
   >

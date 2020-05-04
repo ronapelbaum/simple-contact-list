@@ -22,12 +22,10 @@ const ContactCard = ({ contact }) => {
       onMouseEnter={() => setShowMore(true)}
       onMouseLeave={() => setShowMore(false)}
     >
-      <CardContent>
-        <CardMedia
-          component="img"
-          className={styles.image}
-          image={contact.profile_image}
-        />
+      <CardContent className={styles.content}>
+        <div className={styles.image}>
+          <CardMedia component="img" image={contact.profile_image} />
+        </div>
         <Typography variant="h5" component="h2">
           {contact.name}
         </Typography>
