@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Container, Grid, CircularProgress } from '@material-ui/core';
+import { Container, Grid } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
-
-import { Contact } from '../proptypes/Contact';
+import { Contact } from '../prop-types';
 import ContactCard from './ContactCard';
 import * as Actions from '../actions';
 
@@ -21,18 +20,19 @@ const ContactList = ({
     <Container>
       <Grid
         container
-        justify="center"
+        justify="flex-start"
         alignItems="center"
         spacing={2}
       >
-        {loading ? Array.from(new Array(3)).map((item, index) => (
+        {loading ? Array.from(new Array(7)).map((item, index) => (
           <Grid key={index} item>
+            {/* TODO consider extracting this logic to a "GridWithSkeleton" component */}
             <Skeleton variant="rect" width={210} height={118} />
           </Grid>
           
-        )) : contactList.map(item => (
-          <Grid key={item.id} item>
-            <ContactCard {...item} />
+        )) : contactList.map(contact => (
+          <Grid key={contact.name} item>
+            <ContactCard contact={contact} />
           </Grid>
         ))}
       </Grid>
@@ -43,7 +43,7 @@ ContactList.propTypes = {
   contactList: PropTypes.arrayOf(Contact),
 };
 
-const mapStateToProps = state => console.log('mapStateToProps',state)||({
+const mapStateToProps = state => ({
   loading: state.ContactListReducer.loading,
   contactList: state.ContactListReducer.contactList,
 });

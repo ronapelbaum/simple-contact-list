@@ -6,8 +6,6 @@ const initialState = {
 };
 
 const ContactListReducer = (state = initialState, action) => {
-  console.log('rapelbaum - ContactListReducer', action);
-  
   switch (action.type) {
     case Types.GET_CONTACTS:
       return {

@@ -1,20 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Card, CardContent } from '@material-ui/core';
 
-import * as Actions from '../../actions';
-import { Contact } from '../proptypes/Contact';
+import { Contact } from '../prop-types';
 import styles from './ContactCard.module.scss';
 
-const ContactCard = ({ name, phone }) => (
+const ContactCard = ({ contact }) => (
   <Card className={styles.card}>
     <CardContent>
-      <div>{name}</div>
-      <div>{phone}</div>
+      <div>{contact.name}</div>
+      <div>{contact.phone}</div>
     </CardContent>
   </Card>
 );
 
-ContactCard.propTypes = Contact;
+ContactCard.propTypes = {
+  contact: Contact.isRequired,
+};
 
 export default ContactCard;

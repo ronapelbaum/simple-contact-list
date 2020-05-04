@@ -1,12 +1,17 @@
-import { put, takeEvery, delay } from 'redux-saga/effects'
+import { put, takeEvery, call } from 'redux-saga/effects'
 import * as Actions from './actions';
-import mockData from '../mock/contact-list.json';
+
+const CONTACT_LIST_ENDPOINT = 'http://private-05627-frontendnewhire.apiary-mock.com/contact_list';
+
+function* apiFetch(endpoint) {
+  const data = yield call(fetch, endpoint);
+  return yield data.json();
+}
 
 function* getContacts() {
-  console.log('rapelbaum - saga', 'getContacts()');
-  yield delay(2000);
-  // TODO verify uuid here  
-  yield put(Actions.setContacts(mockData));
+  const contacts = yield call(apiFetch, CONTACT_LIST_ENDPOINT);
+  // TODO verify uuid here
+  yield put(Actions.setContacts(contacts));
 }
 
 export default function* ContactListSaga() {
