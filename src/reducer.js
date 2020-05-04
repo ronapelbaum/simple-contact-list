@@ -6,7 +6,7 @@ const initialState = {
   contactList: mockData,
 };
 
-const listsReducer = (state = initialState, action) => {
+const ContactListReducer = (state = initialState, action) => {
   switch (action.type) {
     case Types.INCREMENT_COUNTER:
       // TODO add immutability (lodash/cloneDeep)
@@ -19,4 +19,4 @@ const listsReducer = (state = initialState, action) => {
   }
 };
 
-export default listsReducer;
+export default ContactListReducer;
