@@ -1,3 +1,5 @@
+@import '../../common/sizes';
+
 .card {
   width: 240px;
   height: 320px;
@@ -9,11 +11,15 @@
   .content {
     display: flex;
     flex-direction: column;
-    max-height: 100%;
+    max-height: calc(100% - 30px);
   }
   
   .image {
     overflow: hidden;
+  }
+  .avatar {
+    margin-top: -50%;
+    margin-left: $gap-lg;
   }
   .label {
     text-transform: capitalize;
