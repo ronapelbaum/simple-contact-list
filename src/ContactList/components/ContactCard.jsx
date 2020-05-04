@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { Rating } from '@material-ui/lab';
 import { Contact } from '../prop-types';
 import styles from './ContactCard.module.scss';
 
@@ -30,6 +31,7 @@ const ContactCard = ({ contact }) => {
         <Typography variant="h5" component="h2">
           {contact.name}
         </Typography>
+        <Rating value={contact.driverRank} readOnly />
         { showMore &&
           <React.Fragment>
             <Field label="phone number" val={contact.phone} />
