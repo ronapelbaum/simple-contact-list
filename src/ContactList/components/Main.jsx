@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Container } from '@material-ui/core';
 import * as Actions from '../actions';
 import Header from './Header';
 import ContactList from './ContactList';
+import styles from './Main.module.scss';
 
 const Main = ({
   getContacts,
@@ -15,7 +17,9 @@ const Main = ({
   return (
     <React.Fragment>
       <Header />
-      <ContactList />
+      <Container className={styles.container}>
+        <ContactList />
+      </Container>
     </React.Fragment>
   );
 };

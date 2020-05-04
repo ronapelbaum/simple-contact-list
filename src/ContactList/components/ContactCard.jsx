@@ -32,7 +32,7 @@ const ContactCard = ({ contact }) => {
           {contact.name}
         </Typography>
         <Rating
-          value={contact.driverRank}
+          value={Number(contact.driverRank)}
           size="small"
           readOnly
         />

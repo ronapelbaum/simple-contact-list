@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Container, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Skeleton } from '@material-ui/lab';
 import { Contact } from '../prop-types';
 import ContactCard from './ContactCard';
@@ -12,24 +12,22 @@ const ContactList = ({
   prefix,
   loading,
 }) => (
-  <Container>
-    <Grid
-      container
-      justify="flex-start"
-      alignItems="center"
-      spacing={2}
-    >
-      {contactList.map(item => (
-        <Grid key={item.id} item>
-          { item.loading ?
-            <Skeleton variant="rect" width={210} height={118} />
-            :
-            <ContactCard contact={item} />
-          }
-        </Grid>
-      ))}
-    </Grid>
-  </Container>
+  <Grid
+    container
+    justify="flex-start"
+    alignItems="center"
+    spacing={2}
+  >
+    {contactList.map(item => (
+      <Grid item key={item.id}>
+        { item.loading ?
+          <Skeleton variant="rect" width={210} height={118} />
+          :
+          <ContactCard contact={item} />
+        }
+      </Grid>
+    ))}
+  </Grid>
 );
 ContactList.propTypes = {
   contactList: PropTypes.arrayOf(Contact),
