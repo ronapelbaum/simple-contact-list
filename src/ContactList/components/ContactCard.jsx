@@ -31,7 +31,11 @@ const ContactCard = ({ contact }) => {
         <Typography variant="h5" component="h2">
           {contact.name}
         </Typography>
-        <Rating value={contact.driverRank} readOnly />
+        <Rating
+          value={contact.driverRank}
+          size="small"
+          readOnly
+        />
         { showMore &&
           <React.Fragment>
             <Field label="phone number" val={contact.phone} />
