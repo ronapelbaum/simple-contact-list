@@ -1,9 +1,9 @@
-import ContactList from './components/ContactList';
+import Main from './components/Main';
 import reducer from './reducer';
 import saga from './saga';
 
 export {
-  ContactList,
+  Main as ContactList,
   reducer,
   saga,
 };
