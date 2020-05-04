@@ -1,4 +1,5 @@
 import { put, takeEvery, call } from 'redux-saga/effects'
+import uid from 'uid';
 import * as Actions from './actions';
 
 const CONTACT_LIST_ENDPOINT = 'http://private-05627-frontendnewhire.apiary-mock.com/contact_list';
@@ -10,8 +11,10 @@ function* apiFetch(endpoint) {
 
 function* getContacts() {
   const contacts = yield call(apiFetch, CONTACT_LIST_ENDPOINT);
-  // TODO verify uuid here
-  yield put(Actions.setContacts(contacts));
+  yield put(Actions.setContacts(contacts.map(c => ({
+    ...c,
+    id: uid(),
+  }))));
 }
 
 export default function* ContactListSaga() {

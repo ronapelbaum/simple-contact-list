@@ -27,4 +27,4 @@ const mapDispatchToProps = dispatch => ({
   getContacts: () => dispatch(Actions.getContacts()),
 });
 
-export default connect(() => ({}), mapDispatchToProps)(Main);
+export default connect(null, mapDispatchToProps)(Main);

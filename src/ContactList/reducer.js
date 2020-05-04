@@ -3,6 +3,7 @@ import { Types } from './actions';
 const initialState = {
   loading: false,
   contactList: [],
+  prefix: null,
 };
 
 const ContactListReducer = (state = initialState, action) => {
@@ -18,6 +19,11 @@ const ContactListReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         contactList: action.data,
+      };
+    case Types.SEARCH_CONTACTS:
+      return {
+        ...state,
+        prefix: action.prefix,
       };
     default:
       return state;
