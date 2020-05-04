@@ -1,10 +1,12 @@
-import { put, takeEvery } from 'redux-saga/effects'
+import { put, takeEvery, delay } from 'redux-saga/effects'
 import * as Actions from './actions';
 import mockData from '../mock/contact-list.json';
 
 function* getContacts() {
   console.log('rapelbaum - saga', 'getContacts()');
-  return yield mockData;
+  yield delay(2000);
+  // TODO verify uuid here  
+  yield put(Actions.setContacts(mockData));
 }
 
 export default function* ContactListSaga() {

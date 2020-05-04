@@ -15,9 +15,9 @@ function* rootSaga() {
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
-  combineReducers(
+  combineReducers({
     ContactListReducer,
-  ),
+  }),
   applyMiddleware(sagaMiddleware)
 );
 sagaMiddleware.run(rootSaga);

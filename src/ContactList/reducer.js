@@ -1,18 +1,25 @@
 import { Types } from './actions';
-import mockData from '../mock/contact-list.json';
 
 const initialState = {
-  counter: 0,
-  contactList: mockData,
+  loading: false,
+  contactList: [],
 };
 
 const ContactListReducer = (state = initialState, action) => {
+  console.log('rapelbaum - ContactListReducer', action);
+  
   switch (action.type) {
-    case Types.INCREMENT_COUNTER:
+    case Types.GET_CONTACTS:
+      return {
+        ...state,
+        loading: true,
+      };
+    case Types.SET_CONTACTS:
       // TODO add immutability (lodash/cloneDeep)
       return {
         ...state,
-        counter: state.counter + 1,
+        loading: false,
+        contactList: action.data,
       };
     default:
       return state;
