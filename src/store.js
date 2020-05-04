@@ -1,13 +1,25 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga'
-import ContactListReducer from './reducer';
-import ContactListSaga from './saga';
+import { all } from 'redux-saga/effects'
+import {
+  reducer as ContactListReducer,
+  saga as ContactListSaga,
+} from './ContactList';
+
+
+function* rootSaga() {
+  yield all([
+    ContactListSaga(),
+  ])
+}
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
-  ContactListReducer,
+  combineReducers(
+    ContactListReducer,
+  ),
   applyMiddleware(sagaMiddleware)
 );
-sagaMiddleware.run(ContactListSaga);
+sagaMiddleware.run(rootSaga);
 
 export default store;

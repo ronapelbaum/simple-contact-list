@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardContent } from '@material-ui/core';
 
-import * as Actions from '../actions';
+import * as Actions from '../../actions';
 import { Contact } from '../proptypes/Contact';
 import styles from './ContactCard.module.scss';
 

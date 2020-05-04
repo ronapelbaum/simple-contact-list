@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Container, Grid } from '@material-ui/core';
-import * as Actions from '../actions';
+import * as Actions from '../../actions';
 import { Contact } from '../proptypes/Contact';
 import ContactCard from './ContactCard';
 
-const ContactList = ({ contactList }) => (
+const ContactList = ({ contactList = [] }) => (
   <Container>
     <Grid
       container

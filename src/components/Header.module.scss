@@ -1,6 +1,6 @@
-@import '../colors';
-@import '../sizes';
-@import '../common.module.scss';
+@import '../common/colors';
+@import '../common/sizes';
+@import '../common/common.module.scss';
 
 .header {
   background-color: $dusk;

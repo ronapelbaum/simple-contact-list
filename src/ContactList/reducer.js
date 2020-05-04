@@ -1,5 +1,5 @@
 import { Types } from './actions';
-import mockData from './mock/contact-list.json';
+import mockData from '../mock/contact-list.json';
 
 const initialState = {
   counter: 0,

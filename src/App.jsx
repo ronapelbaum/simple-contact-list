@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header, ContactList } from './components';
+import { Header } from './components';
+import { ContactList } from './ContactList';
 import { Provider } from 'react-redux';
 import store from './store';
 import styles from './App.module.scss'

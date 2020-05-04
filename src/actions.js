@@ -1,4 +1,5 @@
 export const Types = {
+  INIT: 'INIT',
   INCREMENT_COUNTER: 'INCREMENT_COUNTER',
 };
 
