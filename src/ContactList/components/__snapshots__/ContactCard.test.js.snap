@@ -1,7 +1,195 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactCard.jsx suite renders correctly for contact 1 1`] = `ShallowWrapper {}`;
+exports[`ContactCard.jsx suite renders correctly for contact 1 1`] = `
+"<WithStyles(ForwardRef(Card)) className=\\"card\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+  <WithStyles(ForwardRef(CardContent)) className=\\"content\\">
+    <div className=\\"image\\">
+      <WithStyles(ForwardRef(CardMedia)) component=\\"img\\" image=\\"http://images.unsplash.com/photo-1504575070132-986227df99f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7ecf0d8a55890fdb50eba8d4def9645d\\" />
+    </div>
+    <div>
+      <Avatar type=\\"Professional\\" className=\\"avatar\\" />
+      <WithStyles(ForwardRef(Typography)) variant=\\"h5\\" component=\\"h2\\">
+        Luke Peterson
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Rating)) value={4} size=\\"small\\" readOnly={true} />
+    </div>
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>"
+`;
 
-exports[`ContactCard.jsx suite renders correctly for contact 2 1`] = `ShallowWrapper {}`;
+exports[`ContactCard.jsx suite renders correctly for contact 2 1`] = `
+"<WithStyles(ForwardRef(Card)) className=\\"card\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+  <WithStyles(ForwardRef(CardContent)) className=\\"content\\">
+    <div className=\\"image\\">
+      <WithStyles(ForwardRef(CardMedia)) component=\\"img\\" image=\\"http://caillouetland.com/wp-content/uploads/2017/07/avatar-blank.png\\" />
+    </div>
+    <div>
+      <Avatar type=\\"Citizen\\" className=\\"avatar\\" />
+      <WithStyles(ForwardRef(Typography)) variant=\\"h5\\" component=\\"h2\\">
+        Ziv Avni
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Rating)) value={5} size=\\"small\\" readOnly={true} />
+    </div>
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>"
+`;
 
-exports[`ContactCard.jsx suite renders correctly for contact 3 1`] = `ShallowWrapper {}`;
+exports[`ContactCard.jsx suite renders correctly for contact 3 1`] = `
+"<WithStyles(ForwardRef(Card)) className=\\"card\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+  <WithStyles(ForwardRef(CardContent)) className=\\"content\\">
+    <div className=\\"image\\">
+      <WithStyles(ForwardRef(CardMedia)) component=\\"img\\" image=\\"http://caillouetland.com/wp-content/uploads/2017/07/avatar-blank.png\\" />
+    </div>
+    <div>
+      <Avatar type=\\"Citizen\\" className=\\"avatar\\" />
+      <WithStyles(ForwardRef(Typography)) variant=\\"h5\\" component=\\"h2\\">
+        Mustafa Hussain
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Rating)) value={5} size=\\"small\\" readOnly={true} />
+    </div>
+  </WithStyles(ForwardRef(CardContent))>
+</WithStyles(ForwardRef(Card))>"
+`;
+
+exports[`ContactCard.jsx suite renders correctly with mouseEnter 1`] = `
+"<ContactCard contact={{...}}>
+  <WithStyles(ForwardRef(Card)) className=\\"card\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+    <ForwardRef(Card) classes={{...}} className=\\"card\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+      <WithStyles(ForwardRef(Paper)) className=\\"MuiCard-root card\\" elevation={1} onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+        <ForwardRef(Paper) classes={{...}} className=\\"MuiCard-root card\\" elevation={1} onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+          <div className=\\"MuiPaper-root MuiCard-root card MuiPaper-elevation1 MuiPaper-rounded\\" onMouseEnter={[Function: onMouseEnter]} onMouseLeave={[Function: onMouseLeave]}>
+            <WithStyles(ForwardRef(CardContent)) className=\\"content\\">
+              <ForwardRef(CardContent) classes={{...}} className=\\"content\\">
+                <div className=\\"MuiCardContent-root content\\">
+                  <div className=\\"image\\">
+                    <WithStyles(ForwardRef(CardMedia)) component=\\"img\\" image=\\"http://images.unsplash.com/photo-1504575070132-986227df99f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7ecf0d8a55890fdb50eba8d4def9645d\\">
+                      <ForwardRef(CardMedia) classes={{...}} component=\\"img\\" image=\\"http://images.unsplash.com/photo-1504575070132-986227df99f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7ecf0d8a55890fdb50eba8d4def9645d\\">
+                        <img className=\\"MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img\\" style={[undefined]} src=\\"http://images.unsplash.com/photo-1504575070132-986227df99f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=7ecf0d8a55890fdb50eba8d4def9645d\\" />
+                      </ForwardRef(CardMedia)>
+                    </WithStyles(ForwardRef(CardMedia))>
+                  </div>
+                  <div>
+                    <Avatar type=\\"Professional\\" className=\\"avatar\\">
+                      <ForwardRef(SvgProfessional) className=\\"avatar\\">
+                        <svg className=\\"avatar\\">
+                          professional.svg
+                        </svg>
+                      </ForwardRef(SvgProfessional)>
+                    </Avatar>
+                    <WithStyles(ForwardRef(Typography)) variant=\\"h5\\" component=\\"h2\\">
+                      <ForwardRef(Typography) classes={{...}} variant=\\"h5\\" component=\\"h2\\">
+                        <h2 className=\\"MuiTypography-root MuiTypography-h5\\">
+                          Luke Peterson
+                        </h2>
+                      </ForwardRef(Typography)>
+                    </WithStyles(ForwardRef(Typography))>
+                    <WithStyles(ForwardRef(Rating)) value={4} size=\\"small\\" readOnly={true}>
+                      <ForwardRef(Rating) classes={{...}} value={4} size=\\"small\\" readOnly={true}>
+                        <span onMouseMove={[Function: handleMouseMove]} onMouseLeave={[Function: handleMouseLeave]} className=\\"MuiRating-root MuiRating-sizeSmall MuiRating-readOnly\\" role=\\"img\\" aria-label=\\"4 Stars\\">
+                          <span>
+                            <IconContainer value={1} className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                              <span className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                                <ForwardRef fontSize=\\"inherit\\">
+                                  <WithStyles(ForwardRef(SvgIcon)) fontSize=\\"inherit\\">
+                                    <ForwardRef(SvgIcon) classes={{...}} fontSize=\\"inherit\\">
+                                      <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" color={[undefined]} aria-hidden=\\"true\\" role={[undefined]}>
+                                        <path d=\\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\" />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                            </IconContainer>
+                          </span>
+                          <span>
+                            <IconContainer value={2} className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                              <span className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                                <ForwardRef fontSize=\\"inherit\\">
+                                  <WithStyles(ForwardRef(SvgIcon)) fontSize=\\"inherit\\">
+                                    <ForwardRef(SvgIcon) classes={{...}} fontSize=\\"inherit\\">
+                                      <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" color={[undefined]} aria-hidden=\\"true\\" role={[undefined]}>
+                                        <path d=\\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\" />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                            </IconContainer>
+                          </span>
+                          <span>
+                            <IconContainer value={3} className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                              <span className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                                <ForwardRef fontSize=\\"inherit\\">
+                                  <WithStyles(ForwardRef(SvgIcon)) fontSize=\\"inherit\\">
+                                    <ForwardRef(SvgIcon) classes={{...}} fontSize=\\"inherit\\">
+                                      <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" color={[undefined]} aria-hidden=\\"true\\" role={[undefined]}>
+                                        <path d=\\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\" />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                            </IconContainer>
+                          </span>
+                          <span>
+                            <IconContainer value={4} className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                              <span className=\\"MuiRating-icon MuiRating-iconFilled\\">
+                                <ForwardRef fontSize=\\"inherit\\">
+                                  <WithStyles(ForwardRef(SvgIcon)) fontSize=\\"inherit\\">
+                                    <ForwardRef(SvgIcon) classes={{...}} fontSize=\\"inherit\\">
+                                      <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" color={[undefined]} aria-hidden=\\"true\\" role={[undefined]}>
+                                        <path d=\\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\" />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                            </IconContainer>
+                          </span>
+                          <span>
+                            <IconContainer value={5} className=\\"MuiRating-icon MuiRating-iconEmpty\\">
+                              <span className=\\"MuiRating-icon MuiRating-iconEmpty\\">
+                                <ForwardRef fontSize=\\"inherit\\">
+                                  <WithStyles(ForwardRef(SvgIcon)) fontSize=\\"inherit\\">
+                                    <ForwardRef(SvgIcon) classes={{...}} fontSize=\\"inherit\\">
+                                      <svg className=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" color={[undefined]} aria-hidden=\\"true\\" role={[undefined]}>
+                                        <path d=\\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\\" />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                            </IconContainer>
+                          </span>
+                        </span>
+                      </ForwardRef(Rating)>
+                    </WithStyles(ForwardRef(Rating))>
+                    <Field label=\\"phone number\\" val=\\"123456     7890\\">
+                      <div>
+                        <span className=\\"label\\">
+                          phone number
+                          :
+                        </span>
+                        123456     7890
+                      </div>
+                    </Field>
+                    <Field label=\\"email\\" val=\\"driver.luke@gmail.com\\">
+                      <div>
+                        <span className=\\"label\\">
+                          email
+                          :
+                        </span>
+                        driver.luke@gmail.com
+                      </div>
+                    </Field>
+                  </div>
+                </div>
+              </ForwardRef(CardContent)>
+            </WithStyles(ForwardRef(CardContent))>
+          </div>
+        </ForwardRef(Paper)>
+      </WithStyles(ForwardRef(Paper))>
+    </ForwardRef(Card)>
+  </WithStyles(ForwardRef(Card))>
+</ContactCard>"
+`;

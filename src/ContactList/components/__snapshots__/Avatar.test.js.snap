@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar.jsx suite renders correctly 1`] = `ShallowWrapper {}`;
+exports[`Avatar.jsx suite renders correctly 1`] = `""`;
 
-exports[`Avatar.jsx suite renders correctly Avatar of citizen 1`] = `ShallowWrapper {}`;
+exports[`Avatar.jsx suite renders correctly Avatar of citizen 1`] = `"<ForwardRef(SvgCitizen) className={[undefined]} />"`;
 
-exports[`Avatar.jsx suite renders correctly Avatar of professional 1`] = `ShallowWrapper {}`;
+exports[`Avatar.jsx suite renders correctly Avatar of professional 1`] = `"<ForwardRef(SvgProfessional) className=\\"a-clazz\\" />"`;

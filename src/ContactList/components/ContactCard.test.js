@@ -30,19 +30,23 @@ describe("ContactCard.jsx suite", () => {
     },
   ];
   it("renders correctly for contact 1", () => {
-    expect(shallow(<ContactCard contact={contactList[0]} />)).toMatchSnapshot();
+    expect(
+      shallow(<ContactCard contact={contactList[0]} />).debug()
+    ).toMatchSnapshot();
   });
   it("renders correctly for contact 2", () => {
-    expect(shallow(<ContactCard contact={contactList[1]} />)).toMatchSnapshot();
+    expect(
+      shallow(<ContactCard contact={contactList[1]} />).debug()
+    ).toMatchSnapshot();
   });
   it("renders correctly for contact 3", () => {
-    expect(shallow(<ContactCard contact={contactList[2]} />)).toMatchSnapshot();
+    expect(
+      shallow(<ContactCard contact={contactList[2]} />).debug()
+    ).toMatchSnapshot();
   });
-  // it('renders correctly with mouseEnter', () => {
-  //   const wrapper = mount(<ContactCard contact={contactList[0]} />);
-  //   console.log('rapelbaum - ContactCard.test', wrapper);
-  //   wrapper.find('.MuiCard-root').simulate('mouseEnter');
-    
-  //   // expect(wrapper).toMatchSnapshot();
-  // });
+  it("renders correctly with mouseEnter", () => {
+    const wrapper = mount(<ContactCard contact={contactList[0]} />);
+    wrapper.simulate("mouseEnter");
+    expect(wrapper.debug()).toMatchSnapshot();
+  });
 });
