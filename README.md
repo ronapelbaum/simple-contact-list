@@ -7,12 +7,15 @@
 - use redux & react-redux
 - use redux-saga
 - use material-ui
+- add eslint
+
 #### Components & Features
 - *App.jsx*: react bootstrap flow
 - *Main.jsx*: feature structure and init flow
 - *ContactList.jsx*: grid structure, loading state, use model.js for filtering
 - *ContactCard.jsx*: local state for `showMore`
 - MISC
+  - use material-ui theme
   - changed favicon
 
 ===
