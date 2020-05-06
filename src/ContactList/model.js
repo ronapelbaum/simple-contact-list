@@ -15,6 +15,6 @@ export const displayedContactList = (state) => {
     return contactList;
   }
   return contactList.filter((contact) =>
-    contact.name.toLowerCase().startsWith(prefix.toLowerCase())
+    contact.name.trim().toLowerCase().startsWith(prefix.toLowerCase())
   );
 };

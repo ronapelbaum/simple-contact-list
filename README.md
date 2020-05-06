@@ -8,6 +8,7 @@
 - use redux-saga
 - use material-ui
 - add eslint
+- add enzyme & snapshot testing
 
 #### Components & Features
 - *App.jsx*: react bootstrap flow
