@@ -14,7 +14,7 @@
 - *App.jsx*: react bootstrap flow
 - *Main.jsx*: feature structure and init flow
 - *ContactList.jsx*: grid structure, loading state, use model.js for filtering
-- *ContactCard.jsx*: local state for `showMore`
+- *ContactCard.jsx*: local state for `showMore`, make long text visible using `title`
 - MISC
   - use material-ui theme
   - changed favicon
