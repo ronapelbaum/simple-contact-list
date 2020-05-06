@@ -1,4 +1,4 @@
-## Contact List
+## Contact List ![Node.js CI](https://github.com/ronapelbaum/simple-contact-list/workflows/Node.js%20CI/badge.svg?branch=master)
 
 ### What did I do?
 #### Infrastructure
