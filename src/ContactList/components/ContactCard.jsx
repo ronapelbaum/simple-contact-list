@@ -9,7 +9,7 @@ const DEFAULT_IMAGE = 'http://caillouetland.com/wp-content/uploads/2017/07/avata
 const Field = ({ label, val }) => val ? 
   <div>
     <span className={styles.label}>{label}:</span>
-    {val}
+    <span title={val}>{val}</span>
   </div>
   :
   null

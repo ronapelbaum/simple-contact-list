@@ -170,7 +170,9 @@ exports[`ContactCard.jsx suite renders correctly with mouseEnter 1`] = `
                           phone number
                           :
                         </span>
-                        123456     7890
+                        <span title=\\"123456     7890\\">
+                          123456     7890
+                        </span>
                       </div>
                     </Field>
                     <Field label=\\"email\\" val=\\"driver.luke@gmail.com\\">
@@ -179,7 +181,9 @@ exports[`ContactCard.jsx suite renders correctly with mouseEnter 1`] = `
                           email
                           :
                         </span>
-                        driver.luke@gmail.com
+                        <span title=\\"driver.luke@gmail.com\\">
+                          driver.luke@gmail.com
+                        </span>
                       </div>
                     </Field>
                   </div>
