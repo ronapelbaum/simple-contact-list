@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { ThemeProvider } from '@material-ui/styles';
 import store from './store';
 import './common/common.module.scss';
-import { theme } from './theme';
+import theme from './theme';
 
 const App = () => (
   <Provider store={store}>

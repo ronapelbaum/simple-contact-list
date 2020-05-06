@@ -1,4 +1,4 @@
-import { Types } from './actions';
+import { Types } from "./actions";
 
 const initialState = {
   loading: false,

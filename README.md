@@ -1,3 +1,22 @@
+## Contact List
+
+### What did I do?
+#### Infrastructure
+- create-react-app
+- use scss modules
+- use redux & react-redux
+- use redux-saga
+- use material-ui
+#### Components & Features
+- *App.jsx*: react bootstrap flow
+- *Main.jsx*: feature structure and init flow
+- *ContactList.jsx*: grid structure, loading state, use model.js for filtering
+- *ContactCard.jsx*: local state for `showMore`
+- MISC
+  - changed favicon
+
+===
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
