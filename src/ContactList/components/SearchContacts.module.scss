@@ -1,6 +1,11 @@
 @import '../../common/colors';
+@import '../../common/sizes';
 
 .search {
   background-color: $white;
   margin-right: 0;
+  border-radius: 100px;
+  input {
+    padding: $gap-sm;
+  }
 }

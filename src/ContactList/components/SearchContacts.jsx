@@ -11,8 +11,8 @@ const SearchContacts = ({ searchContacts }) => (
       placeholder="Search..."
       onChange={e => searchContacts(e.target.value)}
     />
-    <IconButton type="submit" aria-label="search">
-      <SearchIcon />
+    <IconButton size="small">
+      <SearchIcon size="small"/>
     </IconButton>
   </div>
 );
